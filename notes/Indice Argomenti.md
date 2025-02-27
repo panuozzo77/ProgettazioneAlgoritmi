@@ -83,10 +83,10 @@
 	- [ ] Miglioriamo l'algoritmo
 	- [ ] Analisi dell'algoritmo migliorato
 
-- [ ] DEF: Grafi Bipartito
-- [ ] Testare se un grafo è bipartito
-- [ ] **DIM:** 2 Casi possibili eseguendo BFS in un grafo bipartito
-- [ ] Modifica BFS: colorare/etichettare alternatamente in base ai livelli
+- [x] DEF: Grafi Bipartito
+- [x] Testare se un grafo è bipartito
+- [x] **DIM:** 2 Casi possibili eseguendo BFS in un grafo bipartito
+- [x] Modifica BFS: colorare/etichettare alternatamente in base ai livelli
 ----
 ## Scelta Greedy
 - [ ] Definizione Algoritmi Greedy

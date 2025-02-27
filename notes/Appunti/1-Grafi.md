@@ -190,7 +190,7 @@ L'algoritmo trova l'ordinamento topologico di un DAG in O(n+m)
 		se count[w] = 0 va aggiunto ad S
 	$$\sum_{u \in V}O(1)+\sum_{u \in V}O(deg(u))=O(n)+O(m)=O(n+m)$$
 
-#### Grafi Bipartiti
+#### Grafi Bipartito
 Un grafo non direzionato è bipartito se l'insieme dei nodi può essere partizionato in 2 sottoinsiemi X ed Y tali che ciascun arco del grafo ha una delle due estremità in X e l'altra in Y
 
 **Testare se è bipartito:** Esistono $2^{n-1}$ possibilità per "colorare i grafi con 2 colori". I modi speculari non contano.
@@ -200,3 +200,5 @@ Un grafo non direzionato è bipartito se l'insieme dei nodi può essere partizio
 **DIM Osservazione:** Sia G un grafo connesso e siano L0,...Lk i livelli prodotti da un'esecuzione di BFS a partire dal nodo s. Può avvenire o che si verifichi (i) o (ii):
 	(i) nessun arco di G collega 2 nodi nello stesso livello
 	(ii) un arco di G collega 2 nodi nello stesso livello
+
+Modifica BFS: aggiungi array "color" ed in base al n° del livello (pari o dispari) inserisci un colore o l'altro. Tempo uguale, O(n+m)
