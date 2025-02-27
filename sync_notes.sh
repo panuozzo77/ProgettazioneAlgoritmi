@@ -2,7 +2,7 @@
 
 # Sync notes and attachments
 rsync -av --delete "/home/cristian/Documents/AllMyNotes/Notes/Notion/Terzo Anno/Progettazione di Algoritmi/" /home/cristian/Documents/pa/notes/
-rsync -av --delete "/home/cristian/Documents/AllMyNotes/Notes/Attachments/Notion/Terzo Anno/Progettazione di Algoritmi/" /home/cristian/Documents/pa/attachments/
+rsync -av --delete "/home/cristian/Documents/AllMyNotes/Attachments/Notes/Notion/Terzo_Anno/Progettazione_di_Algoritmi"
 
 # Commit and push changes
 git add .
