@@ -187,3 +187,46 @@ foreach sottoinsieme S di k nodi
 - Numero di sottoinsiemi di $k$ elementi: combinazione binomiale $\binom{n}{k}\le \frac{n^k}{k!}$
 - Controllare l'indipendenza: $O(k^2)$
 - Totale: $O(k^2n^k/k!)=O(n^k)$
+
+**Tempo Esponenziale $O(2^n)$**
+```python
+'''
+Ricerca del massimo insieme indipendente dato un grafo
+'''
+```python
+S* = empty
+foreach sottoinsieme S di nodi
+	controlla se S è indipendente
+	if (S è il più grande)
+		S* = S
+```
+
+----
+### Confronti dimostrati
+- $log n = O(n^x)$
+	- caso x > 0: $logn$ è approssimabile ad $n$, quindi $n \le n^x \space \forall n \ge 0\Longrightarrow$ per transitività $log n 0(n^x)$
+	- caso x < 0: sappiamo che $log_2 m \le m \forall m \ge 1$. Poniamo $m=n^x, log_2n^x\le n^x \Longrightarrow x log_2 n \le n^X \Longrightarrow log_2 n \le \frac{n^x}{x}$
+		Affinché sia soddisfatta, basta usare $c=\frac{1}{x}, n_0=1$
+- $(logn)^b = O(n^x)$
+	- $(logn)^b = O(n^x)\Longrightarrow log n \le c^{\frac{1}{b}}n^{\frac{x}{b}}$
+		Sappiamo che $log n = O(n^y)$, con $y>0$ poniamo $y=\frac{x}{b}$ il nostro $c'=c^{\frac{1}{b}}$ ed $n'_0=n_0$ pertanto è verificata $log n \le c'n^{\frac{x}{b}} \forall n \ge n'_0$
+- $(logn^a)^b = O(n^x)$
+	- diventa $(a^b)(logn)^b=O(n^x)$
+	- sappiamo che per la dimostrazione precedente è vera $(logn)^b = O(n^x)$ inoltre a^b è una costante, quindi non ha effetti sul costo
+- $logn\not=\Omega(n^x)$
+	- Per definizione: $\exists c>0, n_0\ge0 | logn \ge cn^x \forall n \ge n_0$
+	- $logn \ge cn^x \Leftrightarrow c\le \frac{logn}{n^x}$
+	- Ma preso un qualsiasi valore c, esiste sempre un valore $n_c | \frac{logn}{n^x}<c \forall n \ge n_c$ 
+	- Non è quindi possibile trovare una costante $n_0$ per cui $logn\not=\Omega(n^x)$
+### Regolette Notazioni Asintotiche
+- moltiplicazione di costanti: $d(n)=O(f(n))\Longrightarrow a d(n)=O(f(n))$
+- addizione di funzioni: $d(n)=O(f(n)), e(n)=O(g(n) \Longrightarrow d(n)+e(n)=O(f(n)+g(n))$
+- prodotto di funzioni: $d(n)=O(f(n)), e(n)=O(g(n) \Longrightarrow d(n)e(n)=O(f(n)g(n))$
+-  transitività: $d(n)=O(f(n)), f(n)=O(g(n) \Longrightarrow d(n)=O(g(n))$ 
+- $f(n)=a_dn^d+...+a_1n+a_0 \Longrightarrow f(n)=O(n^d)$ con d esponente massimo
+- $n^x=O(a^n). Es: n^{100}=O(2^n)$
+#### Bound Asintotici Logaritmi
+- $O(log_an)=O(log_bn)$,$\Omega(log_an)=\Omega(log_bn)$,$\Theta(log_an)=\Theta(log_bn)$
+	- regole potenze + moltiplicazioni di costanti
+- $logn=O(n)$
+	- dim per induzione

@@ -1,6 +1,6 @@
 # Prima Parte
 ## Analisi Asintotica
-- [ ] Analisi degli Algoritmi
+- [x] Analisi degli Algoritmi
 	- [ ] Tempo Polinomiale
 	- [ ] Forza Bruta
 	- [ ] Analisi del Caso Pessimo
@@ -37,11 +37,11 @@
 	- [ ] Tempo Esponenziale O($2^n$)
 ----
 ## Grafi
-- [ ] Grafi non Direzionati
+- [x] Grafi non Direzionati
 - [ ] Grafi Direzionati
 - [ ] Numero di archi in un grafo non direzionato
 - [ ] Numero di archi in un grafo direzionato
-- [ ] Rappresentazione dei Grafi
+- [x] Rappresentazione dei Grafi
 	- [ ] Matrice di Adiacenza
 	- [ ] Liste di Adiacenza
 - [ ] Def: Percorso
@@ -53,7 +53,7 @@
 - [ ] Teorema degli Alberi
 - [ ] Definizioni: albero con radice, genitori di v, antenato di v, foglia
 - [ ] **Dim:** se G è connesso e non contiene cicli allora il numero di archi è n-1
-- [ ] Problema della Connettività
+- [x] Problema della Connettività
 	- [ ] BFS (Visita in Ampiezza)
 		- [ ] **DIM:** Esiste un percorso da s e t se e solo se t appare in un livello $L_i$
 		- [ ] Proprietà 1
@@ -65,7 +65,7 @@
 		- [ ] **DIM:** Proprietà 2
 		- [ ] BFS con Stack
 ----
-- [ ] Componente Connessa
+- [x] Componente Connessa
 - [ ] Componente Connessa contenente s
 - [ ] **DIM:** Le componenti connesse di s e t o sono uguali o sono distinte
 - [ ] Visita di Grafi Direzionati
@@ -77,7 +77,7 @@
 - [ ] **DIM:** se un grafo direzionato G ha ordinamento topologico => G è DAG
 - [ ] **DIM:** se un grafo direzionato G  è DAG => G ha un nodo senza archi entranti
 - [ ] **DIM:** se un grafo direzionato G è DAG => ha ordinamento topologico
-- [ ] Algoritmo per trovare l'ordinamento topologico
+- [x] Algoritmo per trovare l'ordinamento topologico
 	- [ ] Analisi dell'algoritmo con metodo di sostituzione
 	- [ ] Analisi dell'algoritmo con metodo iterativo
 	- [ ] Miglioriamo l'algoritmo
@@ -256,9 +256,75 @@
 - [ ] Sottosequenza Crescente più lunga per Elementi Contigui
 	- [ ] Algoritmo
 
-- [ ] Allineamento di Sequenze di Caratteri
+- [ ] Allineamento di Sequenze
 	- [ ] pag 6-9 http://intranet.di.unisa.it/~debonis/PA2023-24/prog_dinamica2024_7.pdf
 
 - [ ] Parentesizzazione
 	- [ ] pag 1-3 http://intranet.di.unisa.it/~debonis/PA2023-24/prog_dinamica2024_8.pdf
 
+
+![[0_notaNotazioniAsintotiche.pdf]]
+
+![[1_Intro.pdf]]
+
+![[2_analisiIparte.pdf]]
+
+![[3_analisiIIparte.pdf]]
+
+![[4_analisiIIIparte.pdf]]
+
+![[5_grafi24_1.pdf]]
+
+![[6_grafi24_2.pdf]]
+
+![[7_grafi24_3.pdf]]
+
+![[8_grafi24_4.pdf]]
+
+![[9_greedy2024_1.pdf]]
+
+![[10_greedy2024_2.pdf]]
+
+![[11_es18_3_2024.pdf]]
+
+![[12_greedy2024_3.pdf]]
+
+![[13_greedy2024_5.pdf]]
+
+![[14_greedy2024_4.pdf]]
+
+![[15_greedy2024_6.pdf]]
+
+![[16_greedy2024_7.pdf]]
+
+![[17_greedy2024_8.pdf]]
+
+![[18_esercitazione1.pdf]]
+
+![[19_divideetimpera2024_1.pdf]]
+
+![[20_divideetimpera2024_2.pdf]]
+
+![[21_divideetimpera2024_3.pdf]]
+
+![[22_prog_dinamica2024_1.pdf]]
+
+![[23_prog_dinamica2024_2.pdf]]
+
+![[24_prog_dinamica2024_3.pdf]]
+
+![[25_prog_dinamica2024_4.pdf]]
+
+![[26_prog_dinamica2024_5.pdf]]
+
+![[27_prog_dinamica2024_6.pdf]]
+
+![[28_prog_dinamica2024_7.pdf]]
+
+![[29_prog_dinamica2024_8.pdf]]
+
+![[30_BT&BB_2024_2.pdf]]
+
+![[31_esame24_6_24.pdf]]
+
+![[32_esame15_7_2024.pdf]]
